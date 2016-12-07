@@ -6,7 +6,7 @@ include "api_header.php";
            FROM HangingOut
            ORDER BY FamilyCode ";
 
-   $query = mysqli_query($conn,$sql);
+   $query = mysqli_query($con,$sql);
    $output = array();
    while($result = mysqli_fetch_assoc($query)) {
      $restaurant = $result["Restaurant"];
