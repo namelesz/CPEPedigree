@@ -1,5 +1,5 @@
 <?php
-  $con = mysqli_connect("localhost", "winwanwoni_db", "Cpe332", "winwanwoni_db");
+  $con = mysqli_connect("hostname", "username", "password", "database");
   session_start();
 
   if(!$_SESSION["FacebookID"]){
